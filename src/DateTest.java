@@ -21,12 +21,13 @@ public class DateTest {
 				y = in.nextInt();
 				
 				Date inDate = new Date(m,d,y);
-
+				out.println("Date object constructor for date " + inDate);
 				for (int i = 0; i < 40; i++) {
 					inDate.nextDay();
 					System.out.println("Incremented Date: " + inDate);
-					out.println(inDate);
+					out.println("Incremented Date: " + inDate);
 				}
+				out.println();
 			}
 			
 			in.close();
